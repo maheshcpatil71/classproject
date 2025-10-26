@@ -46,3 +46,9 @@ info:
     name: service-video
     desc: This is the Video Service from Config Server
     version: 1.0
+
+
+app:
+  notification:
+    email=team@company:
+      com:
