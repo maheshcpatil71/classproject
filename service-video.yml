@@ -1,0 +1,48 @@
+spring:
+  application:
+    name: service-video
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: videodb
+      # If your MongoDB doesn't require a username/password, remove or comment out these lines:
+      # username: root
+      # password: root
+      # authentication-database: admin
+
+  # profiles:
+  #   active: prod      # Change this to dev, qa, or prod as needed
+
+
+
+server:
+  port: 8093
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    register-with-eureka: true
+    fetch-registry: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"     # Expose all Actuator endpoints
+
+  endpoint:
+    shutdown:
+      enabled: true      # Enable shutdown endpoint
+
+  info:
+    env:
+      enabled: true      # Include environment info in /actuator/info
+
+info:
+  app:
+    name: service-video
+    desc: This is the Video Service from Config Server
+    version: 1.0

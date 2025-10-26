@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: service-video
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: videodb
+      # If your MongoDB doesn't require a username/password, remove or comment out these lines:
+      # username: root
+      # password: root
+      # authentication-database: admin
+
+
+
+server:
+  port: 8093
+
+
+
+info:
+  app:
+    name: service-video
+    desc: This is the Category Service for dev Environments in Config Server
+    version: 1.0D
