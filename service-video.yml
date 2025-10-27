@@ -39,5 +39,5 @@ eureka:
 info:
   app:
     name: service-video
-    desc: This is the Video Service  inside GitHub
+    desc: This is the Video Service  inside GitHub using RabbitMQ , spring-cloud-starter-bus-amqp
     version: "1.0"
