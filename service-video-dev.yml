@@ -22,5 +22,5 @@ server:
 info:
   app:
     name: service-video
-    desc: This is the Category Service for dev Environments in Config Server
+    desc: This is the Category Service for dev Environments in Config Server inside GitHub
     version: 1.0D
