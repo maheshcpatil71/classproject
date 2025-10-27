@@ -34,3 +34,10 @@ eureka:
       defaultZone: http://localhost:8761/eureka
     register-with-eureka: true
     fetch-registry: true
+
+
+info:
+  app:
+    name: service-video
+    desc: This is the Video Service  inside GitHub
+    version: "1.0"
